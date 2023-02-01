@@ -1,7 +1,4 @@
 """
-This file contains the core code of the temporal mapping optimization method
-called loma: loop order based memory allocation.
-
 TODO: Get a layers' dimensions to generate the multiset permutations for all loop types
 TODO: Write generator that takes loop-type-specific multiset permutations and generates loop order permutation
 TODO: Write uneven memory allocator, that allocates the loops of the loop order bottom-up to the memories in the hierarchy
@@ -33,16 +30,7 @@ class NoValidLoopOrderingFoundException(Exception):
 
 
 class LomaEngine:
-    """
-    Class that handles optimization of temporal mapping given a:
-    - layer
-    - spatial mapping
-    - a memory hierarchy
-    This optimization is carried out through loop order based memory allocation.
-    For each ordering of the temporal loops, they are allocated bottom-up to the
-    levels in the memory hierarchy.
-    See https://ieeexplore.ieee.org/document/9458493 for more details.
-    """
+
 
     def __init__(self, *, accelerator, layer, spatial_mapping, loma_lpf_limit=np.inf,  **kwargs):
         """
