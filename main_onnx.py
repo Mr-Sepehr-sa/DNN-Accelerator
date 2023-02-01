@@ -21,7 +21,7 @@ _logging.basicConfig(level=_logging_level,
 mainstage = MainStage([  # Initializes the MainStage as entry point
     ONNXModelParserStage,  # Parses the ONNX Model into the workload
     AcceleratorParserStage,  # Parses the accelerator
-    SimpleSaveStage,  # Saves all received CMEs information to a json
+    CompleteSaveStage,  # Saves all received CMEs information to a json
     WorkloadStage,  # Iterates through the different layers in the workload
     SpatialMappingGeneratorStage,  # Generates multiple spatial mappings (SM)
     MinimalLatencyStage,  # Reduces all CMEs, returning minimal latency one
