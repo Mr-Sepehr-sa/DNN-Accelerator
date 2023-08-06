@@ -1,4 +1,3 @@
 # DnnAcc
-پروژه درس معماری  کامپیوتر - گروه ۰۶ - سپهر سبزه کار  ـ سروش احدی
-
+Design of a deep neural network accelerator
 
